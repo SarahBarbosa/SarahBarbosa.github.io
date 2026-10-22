@@ -1,0 +1,23 @@
+---
+layout: archive
+title: "Talks and presentations"
+title_pt: "Palestras e apresentações"
+permalink: /talks/
+author_profile: true
+---
+
+<ul class="timeline">
+  {% for talk in site.data.talks %}
+  <li>
+    <span class="when">{{ talk.year }}</span>
+    <div>
+      <div class="what">{{ talk.title }}</div>
+      <div class="where">
+        <span data-lang="en">{{ talk.type_en }} · {{ talk.event }}</span><span data-lang="pt">{{ talk.type_pt }} · {{ talk.event_pt | default: talk.event }}</span><br>
+        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+        <span data-lang="en">{{ talk.location }}</span><span data-lang="pt">{{ talk.location_pt | default: talk.location }}</span>
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>

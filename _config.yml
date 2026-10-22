@@ -1,0 +1,128 @@
+# Site configuration. Changes here need a restart of `jekyll serve` to show up locally.
+
+# Basic Site Settings
+locale                   : "en-US"
+site_theme               : "default"
+title                    : "Sarah Barbosa"
+title_separator          : "-"
+name                     : &name "Sarah G. A. Barbosa"
+description              : &description "Sarah G. A. Barbosa, astrophysicist working on machine learning for exoplanet characterization and the Habitable Worlds Observatory."
+url                      : https://sarahbarbosa.github.io
+baseurl                  : ""
+repository               : "SarahBarbosa/SarahBarbosa.github.io"
+
+# Sidebar profile. Text fields may hold <span data-lang="en|pt"> pairs for the language toggle.
+author:
+  avatar           : "profile.jpeg"
+  name             : "Sarah G. A. Barbosa"
+  pronouns         :
+  bio              : '<span data-lang="en">Ph.D. candidate in Physics. Exoplanets, machine learning and the Habitable Worlds Observatory.</span><span data-lang="pt">Doutoranda em Física. Exoplanetas, aprendizado de máquina e o Habitable Worlds Observatory.</span>'
+  location         : '<span data-lang="en">Fortaleza, Brazil</span><span data-lang="pt">Fortaleza, Brasil</span>'
+  employer         : '<span data-lang="en">Federal University of Ceará</span><span data-lang="pt">Universidade Federal do Ceará</span>'
+  uri              :
+  email            : "sarah@fisica.ufc.br"
+
+  # Academic websites
+  googlescholar    : "https://scholar.google.com/citations?user=_ZQTuC4AAAAJ"
+  orcid            : "https://orcid.org/0000-0003-3267-5398"
+  lattes           : "http://lattes.cnpq.br/3243493930703280"
+  ads              : "https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0003-3267-5398&sort=date%20desc"
+
+  # Repositories and social media
+  github           : "SarahBarbosa"
+  linkedin         : "sarah-aroucha-barbosa"
+
+# Site Settings
+teaser                   :
+breadcrumbs              : false
+words_per_minute         : 160
+future                   : true
+read_more                : "disabled"
+comments:
+  provider               :
+atom_feed:
+  hide                   : true
+
+# SEO / social sharing
+google_site_verification :
+twitter:
+  username               :
+og_image                 : profile.jpeg
+og_description           : *description
+social:
+  type                   : Person
+  links:
+    - "https://orcid.org/0000-0003-3267-5398"
+    - "https://github.com/SarahBarbosa"
+    - "https://www.linkedin.com/in/sarah-aroucha-barbosa"
+
+analytics:
+  provider               : "false"
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+  - files
+exclude:
+  - .asset-cache
+  - .bundle
+  - .github
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - node_modules
+  - package.json*
+  - README.md
+  - vendor
+keep_files:
+  - .git
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Publications and talks live in _data/publications.yml and _data/talks.yml.
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+permalink: /:categories/:title/
+timezone: America/Fortaleza
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development

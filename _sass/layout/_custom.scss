@@ -1,0 +1,202 @@
+/* ==========================================================================
+   CUSTOM STYLES (Sarah's site): colors, fonts, language toggle, components
+   ========================================================================== */
+
+/* Language switching: English shows unless <html data-active="pt"> */
+[data-lang="pt"] { display: none !important; }
+html[data-active="pt"] [data-lang="pt"] { display: revert !important; }
+html[data-active="pt"] [data-lang="en"] { display: none !important; }
+
+/* Palette */
+:root {
+  --global-base-color          : #2b5d8a;
+  --global-bg-color            : #fdfcfa;
+  --global-footer-bg-color     : #f5f3ef;
+  --global-border-color        : #e7e3dc;
+  --global-link-color          : #2b5d8a;
+  --global-link-color-hover    : #1a3d5e;
+  --global-link-color-visited  : #2b5d8a;
+  --global-text-color          : #262a30;
+  --global-text-color-light    : #6b7178;
+  --card-bg                    : #ffffff;
+  --accent-soft                : #e8eff6;
+}
+html[data-theme="dark"] {
+  --global-base-color          : #8ab8e6;
+  --global-bg-color            : #15181c;
+  --global-footer-bg-color     : #111316;
+  --global-border-color        : #2b3036;
+  --global-dark-border-color   : #2b3036;
+  --global-link-color          : #8ab8e6;
+  --global-link-color-hover    : #b8d5f3;
+  --global-link-color-visited  : #8ab8e6;
+  --global-masthead-link-color : #e4e6e9;
+  --global-text-color          : #e4e6e9;
+  --global-text-color-light    : #9aa1aa;
+  --card-bg                    : #1c2026;
+  --accent-soft                : #1f2b38;
+}
+
+/* Typography */
+body { font-family: "Inter", $sans-serif; }
+h1, h2, h3, h4,
+.page__title,
+.author__name,
+.masthead__menu-item--lg a {
+  font-family: "Source Serif 4", $georgia;
+  font-weight: 600;
+}
+.page__content { line-height: 1.7; }
+.page__content h2 {
+  margin-top: 2.2em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--global-border-color);
+  font-size: 1.35em;
+}
+.page__content a, .archive a { text-decoration: none; }
+.page__content a:hover, .archive a:hover { text-decoration: underline; }
+
+/* Masthead */
+.masthead { background: color-mix(in srgb, var(--global-bg-color) 94%, transparent); backdrop-filter: blur(6px); }
+.lang-item { display: flex; align-items: center; }
+#lang-toggle {
+  font: 600 0.72rem/1 "Inter", $sans-serif;
+  letter-spacing: 0.06em;
+  color: var(--global-masthead-link-color);
+  background: transparent;
+  border: 1px solid var(--global-border-color);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+  transition: $global-transition;
+}
+#lang-toggle:hover { border-color: var(--global-base-color); color: var(--global-base-color); }
+
+/* Sidebar profile */
+.author__avatar img { border: 3px solid var(--global-bg-color); box-shadow: 0 0 0 1px var(--global-border-color); }
+.author__bio { font-size: 0.85em; line-height: 1.5; }
+
+/* Home: intro */
+.lead { font-size: 1.08em; }
+
+/* Home: news */
+.news { list-style: none; margin: 0 0 1em; padding: 0; }
+.news li {
+  display: grid;
+  grid-template-columns: 5.5em 1fr;
+  gap: 0.8em;
+  padding: 0.55em 0;
+  border-bottom: 1px dashed var(--global-border-color);
+  font-size: 0.92em;
+}
+.news li:last-child { border-bottom: 0; }
+.news .date { color: var(--global-text-color-light); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.news .highlight { color: var(--global-base-color); font-weight: 600; }
+
+/* Home: research interest cards */
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+  gap: 1em;
+  margin: 1em 0 1.5em;
+}
+.interest-card {
+  display: block;
+  padding: 1.1em 1.2em;
+  background: var(--card-bg);
+  border: 1px solid var(--global-border-color);
+  border-radius: 10px;
+  color: var(--global-text-color) !important;
+  transition: $global-transition;
+}
+.interest-card:hover { border-color: var(--global-base-color); transform: translateY(-2px); text-decoration: none !important; }
+.interest-card i { font-size: 1.3em; color: var(--global-base-color); margin-bottom: 0.5em; display: block; }
+.interest-card strong { display: block; font-family: "Source Serif 4", $georgia; font-size: 1.02em; margin-bottom: 0.25em; }
+.interest-card .desc { display: block; font-size: 0.85em; color: var(--global-text-color-light); line-height: 1.5; }
+
+/* Research page */
+.research-topic { margin-bottom: 2em; }
+.research-topic .papers { font-size: 0.85em; color: var(--global-text-color-light); }
+
+/* Publications */
+.pub-intro { color: var(--global-text-color-light); font-size: 0.9em; }
+.pub-section { margin-top: 2em; }
+.pub-section > h2 { font-size: 1.3em; border-bottom: 1px solid var(--global-border-color); padding-bottom: 0.3em; }
+.pub {
+  display: grid;
+  grid-template-columns: 3.5em 1fr;
+  gap: 1em;
+  padding: 1em 0;
+  border-bottom: 1px solid var(--global-border-color);
+}
+.pub:last-child { border-bottom: 0; }
+.pub__year {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--global-base-color);
+  font-size: 0.95em;
+  padding-top: 0.1em;
+}
+.pub__title { font-weight: 600; line-height: 1.4; margin: 0 0 0.25em; font-size: 1em; }
+.pub__authors, .pub__venue { margin: 0; font-size: 0.86em; color: var(--global-text-color-light); line-height: 1.5; }
+.pub__authors p, .pub__venue p { margin: 0; }
+.pub__authors strong { color: var(--global-text-color); }
+.pub__links { margin-top: 0.5em; display: flex; flex-wrap: wrap; gap: 0.4em; }
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  font-size: 0.72em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.2em 0.65em;
+  border-radius: 999px;
+  border: 1px solid var(--global-border-color);
+  color: var(--global-text-color-light) !important;
+  background: transparent;
+  text-decoration: none !important;
+}
+a.tag:hover { border-color: var(--global-base-color); color: var(--global-base-color) !important; }
+.tag--accent { background: var(--accent-soft); border-color: transparent; color: var(--global-base-color) !important; }
+
+/* Talks and CV timelines */
+.timeline { list-style: none; margin: 0; padding: 0; }
+.timeline > li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 6.5em 1fr;
+  gap: 1em;
+  padding: 0.8em 0;
+  border-bottom: 1px solid var(--global-border-color);
+}
+.timeline > li:last-child { border-bottom: 0; }
+.timeline .when { color: var(--global-base-color); font-weight: 600; font-size: 0.9em; font-variant-numeric: tabular-nums; }
+.timeline .what { font-weight: 600; line-height: 1.4; }
+.timeline .where { font-size: 0.86em; color: var(--global-text-color-light); line-height: 1.5; }
+.timeline .where p { margin: 0; }
+
+/* CV download button */
+.btn-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.55em 1.1em;
+  border-radius: 8px;
+  background: var(--global-base-color);
+  color: var(--global-bg-color) !important;
+  font-weight: 600;
+  font-size: 0.9em;
+  text-decoration: none !important;
+}
+.btn-cv:hover { filter: brightness(1.1); }
+
+/* Footer */
+.page__footer { background: var(--global-footer-bg-color); }
+.page__footer-copyright { font-size: 0.8em; }
+
+/* Phones */
+@media (max-width: 600px) {
+  .news li, .timeline > li { grid-template-columns: 1fr; gap: 0.1em; }
+  .pub { grid-template-columns: 1fr; gap: 0.2em; }
+}

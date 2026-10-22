@@ -1,0 +1,73 @@
+# Publications, newest first within each category.
+# category: refereed | preprint | proceedings | book
+# authors is Markdown: wrap your own name in **...** to highlight it.
+# Optional: status_en/status_pt (e.g. "in press"), doi, arxiv, ads, url, first_author: true
+
+- title: "Towards the Habitable Worlds Observatory: Retrieval of Reflection Spectra from Evolving Earth Analogues using 1D CNNs"
+  authors: "**Barbosa, S. G. A.**, Estrela, R., da Silva Filho, P. C. F., Mugnai, L. V., & de Freitas, D. B."
+  year: 2026
+  venue: "*RAS Techniques and Instruments*, HWO special issue"
+  status_en: "in press"
+  status_pt: "no prelo"
+  arxiv: "2508.00076"
+  category: refereed
+  first_author: true
+
+- title: "Statistical Evidence for a Localized Projected-rotation Residual in the Solar Neighborhood"
+  authors: "**Barbosa, S. G. A.**, de Freitas, D. B., Corradi, W. J. B., da Silva Filho, P. C. F., Masuda, K., & de Medeiros, J. R."
+  year: 2026
+  venue: "*The Astrophysical Journal*, 1007, 66"
+  doi: "10.3847/1538-4357/ae8d27"
+  category: refereed
+  first_author: true
+
+- title: "A non-extensive diagnostic of spin-orbit coupling in close-in giant exoplanets"
+  authors: "Santiago, T. M., **Barbosa, S. G. A.**, Alves, B. W. F., Cavalcante, F. J., da Silva Filho, P. C. F., & de Freitas, D. B."
+  year: 2026
+  venue: "*EPL*, 155, 41001"
+  doi: "10.1209/0295-5075/ae933c"
+  category: refereed
+
+- title: "Multiwavelength variability of Quasar 3C 273 described by nonextensive statistical mechanics"
+  authors: "**Barbosa, S. G. A.**, de Vasconcelos, B. C., da Silva, C. V., Alencar Filho, F. V., Bravo, J. P., Batista, L. F., & de Freitas, D. B."
+  year: 2026
+  venue: "*EPL*, 153, 41001"
+  doi: "10.1209/0295-5075/ae437d"
+  category: refereed
+  first_author: true
+
+- title: "A new non-extensive proxy for the evolution of stellar rotation period in planetary systems"
+  authors: "Santiago, T. M., **Barbosa, S. G. A.**, Cavalcante, F. J., da Silva Filho, P. C. F., & de Freitas, D. B."
+  year: 2025
+  venue: "*EPL*, 151, 29001"
+  doi: "10.1209/0295-5075/adecbf"
+  category: refereed
+
+- title: "Multifractal characterization as a function of timescale in the light curves with planetary signal observed by the Kepler mission"
+  authors: "Lima Filho, F. J. S., Ferreira, V. M. B., da Silva Filho, P. C. F., Gomes, F. O. S., Alves, B. W. F., **Barbosa, S. G. A.**, Santiago, T. M., & de Freitas, D. B."
+  year: 2022
+  venue: "*Brazilian Journal of Development*, 8, 67992"
+  doi: "10.34117/bjdv8n10-193"
+  category: refereed
+
+- title: "Early Exploration of the Scientific Discovery Space for the Habitable Worlds Observatory"
+  authors: "Dressing, C. D., et al. (including **Barbosa, S. G. A.**)"
+  year: 2026
+  venue: "HWO community paper"
+  arxiv: "2608.11294"
+  category: preprint
+
+- title: "Convolutional Neural Networks for Characterizing Reflection Spectra of Evolving Earth-Like Planets"
+  authors: "**Barbosa, S. G. A.**, Estrela, R. L. F., da Silva Filho, P. C. F., & de Freitas, D. B."
+  year: 2026
+  venue: "HWO25 Proceedings Part II: Mission Framework, Technology, and Broader Contributions, *ASP Conf. Ser.*, 543, 131"
+  category: proceedings
+  first_author: true
+
+- title: "Mecânica Quântica Relativística: Uma Introdução ao Campo de Klein-Gordon"
+  authors: "Tavares, M. S., & **Barbosa, S. G. A.**"
+  year: 2020
+  venue: "Novas Edições Acadêmicas, ISBN 978-6200579942"
+  status_en: "book, in Portuguese"
+  status_pt: "livro"
+  category: book

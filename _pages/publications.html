@@ -1,0 +1,37 @@
+---
+layout: archive
+title: "Publications"
+title_pt: "Publicações"
+permalink: /publications/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p class="pub-intro">
+  <span data-lang="en">The full and up-to-date list is also available on</span>
+  <span data-lang="pt">A lista completa e atualizada também está disponível no</span>
+  <a href="{{ site.author.googlescholar }}">Google Scholar</a>
+  <span data-lang="en">and</span><span data-lang="pt">e no</span>
+  <a href="{{ site.author.ads }}">NASA ADS</a>.
+</p>
+
+{% assign sections = "refereed,preprint,proceedings,book" | split: "," %}
+{% for section in sections %}
+  {% assign pubs = site.data.publications | where: "category", section %}
+  {% if pubs.size > 0 %}
+  <div class="pub-section">
+    <h2>
+      {% case section %}
+        {% when "refereed" %}<span data-lang="en">Refereed articles</span><span data-lang="pt">Artigos com revisão por pares</span>
+        {% when "preprint" %}<span data-lang="en">Preprints and community papers</span><span data-lang="pt">Preprints e artigos da comunidade</span>
+        {% when "proceedings" %}<span data-lang="en">Conference proceedings</span><span data-lang="pt">Anais de congressos</span>
+        {% when "book" %}<span data-lang="en">Books</span><span data-lang="pt">Livros</span>
+      {% endcase %}
+    </h2>
+    {% for pub in pubs %}
+      {% include publication.html pub=pub %}
+    {% endfor %}
+  </div>
+  {% endif %}
+{% endfor %}
