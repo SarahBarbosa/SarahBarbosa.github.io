@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "About me"
-title_pt: "Sobre mim"
+title: "Hello there!"
+title_pt: "Olá!"
 author_profile: true
 redirect_from:
   - /about/
@@ -10,28 +10,14 @@ redirect_from:
 
 {% include base_path %}
 
-<div data-lang="en" markdown="1">
-
-<p class="lead">Few questions in modern astronomy are as compelling as whether we will one day recognize the signature of life in the faint light of a planet orbiting another star. I am a Ph.D. candidate in Physics at the Federal University of Ceará (UFC), in Fortaleza, Brazil, and my research approaches this question through machine learning, with a particular focus on preparing for NASA's <strong>Habitable Worlds Observatory (HWO)</strong>, a future space telescope designed to directly image Earth-like planets around nearby stars and search their atmospheres for signs of life.</p>
-
-In my thesis, I investigate what a telescope such as HWO could learn from the reflected light of Earth analogues observed at different stages of their geological history, from the anoxic Archean, through the Proterozoic, to the oxygen-rich modern Earth. To this end, I train convolutional neural networks on large grids of simulated spectra and use them to retrieve the abundances of key atmospheric gases, namely ozone, methane and molecular oxygen, while assessing how much of the remaining uncertainty arises from observational noise and how much from the model itself. In this way, the goal is not only to recover what is present in an atmosphere, but also to understand when such inferences can be trusted.
-
-In parallel, I maintain an active line of research in stellar astrophysics, which is where my scientific path began. During my master's degree, I studied the metallicity–age–distance relation of F- and G-type stars in the solar neighborhood, and I have since worked on the projected rotation of nearby stars and, together with the STELLAR TEAM at UFC, on the application of nonextensive statistical mechanics to stars, exoplanets and quasars. Throughout these projects, the common thread has been the combination of large datasets, careful statistical methods and physical models to extract robust conclusions from noisy astronomical observations.
-
-I am a member of the Data Processing & Analysis Task Group of the HWO AI/ML Working Group, and my doctoral work is supervised by Prof. Daniel Brito de Freitas (UFC) and co-supervised by Dr. Raissa Estrela (JPL/Caltech). I will defend my thesis in November 2026.
-
+<div data-lang="en">
+<p class="lead">I am a Ph.D. candidate in Physics at the Federal University of Ceará (UFC), Brazil, working at the intersection of astrophysics and machine learning. My thesis prepares for NASA's <strong>Habitable Worlds Observatory (HWO)</strong>: I train neural networks to read the reflected light of Earth-like planets across geological time and to recover gases such as ozone, methane and oxygen, while assessing when those inferences can be trusted.</p>
+<p>I also work on stellar astrophysics, from stellar rotation in the solar neighborhood to nonextensive statistics applied to stars, exoplanets and quasars. I am a member of the HWO AI/ML Working Group and will defend my thesis in November 2026.</p>
 </div>
 
-<div data-lang="pt" markdown="1">
-
-<p class="lead">Poucas questões da astronomia moderna são tão instigantes quanto a possibilidade de, um dia, reconhecermos a assinatura da vida na tênue luz de um planeta que orbita outra estrela. Sou doutoranda em Física na Universidade Federal do Ceará (UFC), em Fortaleza, e minha pesquisa aborda essa questão por meio do aprendizado de máquina, com foco especial na preparação para o <strong>Habitable Worlds Observatory (HWO)</strong>, futuro telescópio espacial da NASA concebido para obter imagens diretas de planetas semelhantes à Terra ao redor de estrelas próximas e buscar sinais de vida em suas atmosferas.</p>
-
-Na minha tese, investigo o que um telescópio como o HWO poderia aprender a partir da luz refletida por análogos da Terra observados em diferentes estágios de sua história geológica, desde o Arqueano, ainda sem oxigênio, passando pelo Proterozoico, até a Terra moderna, rica em oxigênio. Para isso, treino redes neurais convolucionais com grandes conjuntos de espectros simulados e as utilizo para recuperar a abundância de gases atmosféricos fundamentais, a saber, ozônio, metano e oxigênio molecular, avaliando ao mesmo tempo quanto da incerteza remanescente decorre do ruído observacional e quanto provém do próprio modelo. Desse modo, o objetivo não é apenas recuperar o que existe em uma atmosfera, mas também compreender quando tais inferências são confiáveis.
-
-Paralelamente, mantenho uma linha ativa de pesquisa em astrofísica estelar, onde minha trajetória científica começou. No mestrado, estudei a relação metalicidade–idade–distância de estrelas dos tipos F e G na vizinhança solar e, desde então, tenho trabalhado com a rotação projetada de estrelas próximas e, junto ao STELLAR TEAM da UFC, com a aplicação da mecânica estatística não extensiva a estrelas, exoplanetas e quasares. Em todos esses projetos, o fio condutor tem sido a combinação de grandes conjuntos de dados, métodos estatísticos cuidadosos e modelos físicos para extrair conclusões robustas de observações astronômicas ruidosas.
-
-Sou membro do grupo de Processamento e Análise de Dados (DPA) do Grupo de Trabalho de IA/ML do HWO, e meu doutorado é orientado pelo Prof. Daniel Brito de Freitas (UFC) e coorientado pela Dra. Raissa Estrela (JPL/Caltech). A defesa da tese está prevista para novembro de 2026.
-
+<div data-lang="pt">
+<p class="lead">Sou doutoranda em Física na Universidade Federal do Ceará (UFC) e trabalho na interface entre astrofísica e aprendizado de máquina. Minha tese é voltada à preparação para o <strong>Habitable Worlds Observatory (HWO)</strong>, da NASA: treino redes neurais para interpretar a luz refletida por planetas semelhantes à Terra ao longo do tempo geológico e recuperar gases como ozônio, metano e oxigênio, avaliando quando essas inferências são confiáveis.</p>
+<p>Também atuo em astrofísica estelar, da rotação de estrelas na vizinhança solar à estatística não extensiva aplicada a estrelas, exoplanetas e quasares. Sou membro do Grupo de Trabalho de IA/ML do HWO e defendo minha tese em novembro de 2026.</p>
 </div>
 
 ## <span data-lang="en">Research interests</span><span data-lang="pt">Interesses de pesquisa</span>
