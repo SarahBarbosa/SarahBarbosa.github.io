@@ -9,7 +9,6 @@
       {% if pub.first_author %}<span class="tag tag--accent"><span data-lang="en">First author</span><span data-lang="pt">Primeira autora</span></span>{% endif %}
       {% if pub.doi %}<a class="tag" href="https://doi.org/{{ pub.doi }}"><i class="fa-solid fa-link" aria-hidden="true"></i> DOI</a>{% endif %}
       {% if pub.arxiv %}<a class="tag" href="https://arxiv.org/abs/{{ pub.arxiv }}"><i class="ai ai-arxiv" aria-hidden="true"></i> arXiv</a>{% endif %}
-      {% if pub.ads %}<a class="tag" href="{{ pub.ads }}"><i class="ai ai-ads" aria-hidden="true"></i> ADS</a>{% endif %}
       {% if pub.url %}<a class="tag" href="{{ pub.url }}"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> <span data-lang="en">Link</span><span data-lang="pt">Link</span></a>{% endif %}
     </div>
   </div>

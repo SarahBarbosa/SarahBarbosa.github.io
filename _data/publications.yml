@@ -1,7 +1,7 @@
 # Publications, newest first within each category.
 # category: refereed | preprint | proceedings | book
 # authors is Markdown: wrap your own name in **...** to highlight it.
-# Optional: status_en/status_pt (e.g. "in press"), doi, arxiv, ads, url, first_author: true
+# Optional: status_en/status_pt (e.g. "in press"), doi, arxiv, url, first_author: true
 
 - title: "Towards the Habitable Worlds Observatory: Retrieval of Reflection Spectra from Evolving Earth Analogues using 1D CNNs"
   authors: "**Barbosa, S. G. A.**, Estrela, R., da Silva Filho, P. C. F., Mugnai, L. V., & de Freitas, D. B."
