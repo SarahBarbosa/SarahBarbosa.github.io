@@ -12,12 +12,12 @@ redirect_from:
 
 <div data-lang="en">
 <p class="lead">I am a Ph.D. candidate in Physics at the Federal University of Ceará (UFC), Brazil, working at the intersection of astrophysics and machine learning. My thesis prepares for NASA's <strong>Habitable Worlds Observatory (HWO)</strong>: I train neural networks to read the reflected light of Earth-like planets across geological time and to recover gases such as ozone, methane and oxygen, while assessing when those inferences can be trusted.</p>
-<p>I also work on stellar astrophysics, from stellar rotation in the solar neighborhood to nonextensive statistics applied to stars, exoplanets and quasars. I am a member of the HWO AI/ML Working Group and will defend my thesis in November 2026.</p>
+<p>I also work on stellar astrophysics, from stellar rotation in the solar neighborhood to nonextensive statistics applied to stars, exoplanets and quasars. I am a member of the HWO AI/ML Working Group.</p>
 </div>
 
 <div data-lang="pt">
 <p class="lead">Sou doutoranda em Física na Universidade Federal do Ceará (UFC) e trabalho na interface entre astrofísica e aprendizado de máquina. Minha tese é voltada à preparação para o <strong>Habitable Worlds Observatory (HWO)</strong>, da NASA: treino redes neurais para interpretar a luz refletida por planetas semelhantes à Terra ao longo do tempo geológico e recuperar gases como ozônio, metano e oxigênio, avaliando quando essas inferências são confiáveis.</p>
-<p>Também atuo em astrofísica estelar, da rotação de estrelas na vizinhança solar à estatística não extensiva aplicada a estrelas, exoplanetas e quasares. Sou membro do Grupo de Trabalho de IA/ML do HWO e defendo minha tese em novembro de 2026.</p>
+<p>Também atuo em astrofísica estelar, da rotação de estrelas na vizinhança solar à estatística não extensiva aplicada a estrelas, exoplanetas e quasares. Sou membro do Grupo de Trabalho de IA/ML do HWO.</p>
 </div>
 
 ## <span data-lang="en">Research interests</span><span data-lang="pt">Interesses de pesquisa</span>
