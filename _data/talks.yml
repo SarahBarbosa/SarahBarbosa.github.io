@@ -1,6 +1,15 @@
 # Talks, newest first. Fields ending in _pt are the Portuguese version (fall back to English when absent).
 
 - year: 2026
+  title: "Statistical Evidence for a Localized Projected-rotation Residual in the Solar Neighborhood"
+  event: "XLIX Annual Meeting of the Brazilian Astronomical Society (SAB)"
+  event_pt: "XLIX Reunião Anual da Sociedade Astronômica Brasileira (SAB)"
+  location: "Natal, Brazil"
+  location_pt: "Natal, Brasil"
+  type_en: "Presentation"
+  type_pt: "Apresentação"
+
+- year: 2026
   title: "Machine Learning and the Search for Life: A Preparation for the Habitable Worlds Observatory"
   event: "From Stars to Life: Stellar Impacts on Planetary Atmospheres, Habitability, and Biosignatures Detection"
   location: "Natal, Brazil"

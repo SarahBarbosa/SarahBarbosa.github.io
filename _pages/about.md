@@ -55,6 +55,11 @@ redirect_from:
       <span data-lang="pt">defesa do doutorado na UFC, <em>Machine Learning and the Search for Life: A Preparation for the Habitable Worlds Observatory</em>.</span></span>
   </li>
   <li>
+    <span class="date"><span data-lang="en">Oct 2026</span><span data-lang="pt">out 2026</span></span>
+    <span><span data-lang="en">Presenting our <em>ApJ</em> results on the projected-rotation residual in the solar neighborhood at the XLIX Annual Meeting of the Brazilian Astronomical Society (SAB), in Natal.</span>
+      <span data-lang="pt">Apresentação dos nossos resultados do <em>ApJ</em> sobre o resíduo na rotação projetada da vizinhança solar na XLIX Reunião Anual da Sociedade Astronômica Brasileira (SAB), em Natal.</span></span>
+  </li>
+  <li>
     <span class="date">2026</span>
     <span><span data-lang="en">Our paper on neural-network retrievals of evolving Earth analogues was accepted to the HWO special issue of <em>RAS Techniques and Instruments</em>.</span>
       <span data-lang="pt">Nosso artigo sobre recuperação com redes neurais de análogos da Terra em evolução foi aceito na edição especial do HWO da <em>RAS Techniques and Instruments</em>.</span>
