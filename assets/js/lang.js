@@ -14,7 +14,8 @@
 
   setLang(root.getAttribute("data-active") === "pt" ? "pt" : "en");
 
-  button.addEventListener("click", function () {
+  button.addEventListener("click", function (event) {
+    event.preventDefault();
     setLang(root.getAttribute("data-active") === "pt" ? "en" : "pt");
   });
 })();

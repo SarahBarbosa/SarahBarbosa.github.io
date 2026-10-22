@@ -18,13 +18,11 @@
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
-          <li class="masthead__menu-item persist tail lang-item">
-            <button id="lang-toggle" type="button" aria-label="Mudar para português" title="English / Português">
-              <span data-lang="en">PT</span><span data-lang="pt">EN</span>
-            </button>
-          </li>
-          <li id="theme-toggle" class="masthead__menu-item persist">
+          <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
+          </li>
+          <li class="masthead__menu-item persist lang-item">
+            <a id="lang-toggle" href="#" role="button" aria-label="Mudar para português" title="English / Português"><span data-lang="en">PT</span><span data-lang="pt">EN</span></a>
           </li>
         </ul>
         <ul class="hidden-links hidden"></ul>

@@ -58,8 +58,9 @@ h1, h2, h3, h4,
 
 /* Masthead */
 .masthead { background: color-mix(in srgb, var(--global-bg-color) 94%, transparent); backdrop-filter: blur(6px); }
-.lang-item { display: flex; align-items: center; }
-#lang-toggle {
+.greedy-nav .visible-links #lang-toggle {
+  display: inline-block;
+  margin: 0 0 0 0.6rem;
   font: 600 0.72rem/1 "Inter", $sans-serif;
   letter-spacing: 0.06em;
   color: var(--global-masthead-link-color);
@@ -70,7 +71,8 @@ h1, h2, h3, h4,
   cursor: pointer;
   transition: $global-transition;
 }
-#lang-toggle:hover { border-color: var(--global-base-color); color: var(--global-base-color); }
+.greedy-nav .visible-links #lang-toggle:before { display: none; }
+.greedy-nav .visible-links #lang-toggle:hover { border-color: var(--global-base-color); color: var(--global-base-color); }
 
 /* Sidebar profile */
 .author__avatar img { border: 3px solid var(--global-bg-color); box-shadow: 0 0 0 1px var(--global-border-color); }
@@ -192,7 +194,7 @@ a.tag:hover { border-color: var(--global-base-color); color: var(--global-base-c
 .btn-cv:hover { filter: brightness(1.1); }
 
 /* Footer */
-.page__footer { background: var(--global-footer-bg-color); }
+.page__footer { background: var(--global-footer-bg-color); position: relative; }
 .page__footer-copyright { font-size: 0.8em; }
 
 /* Phones */
